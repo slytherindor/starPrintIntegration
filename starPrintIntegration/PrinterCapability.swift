@@ -8,6 +8,8 @@
 
 import Foundation
 
+// This is just a placeholder class to hold the information
+// about the TSP650II printer. It allows to load the current settings for the printer.
 class PrinterInfo {
     let title: String
     
