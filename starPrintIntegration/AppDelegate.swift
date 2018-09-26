@@ -53,69 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     fileprivate func loadParam() {
         AppDelegate.settingManager.load()
     }
-    
-    static func getPortName() -> String {
-        return settingManager.settings[0]?.portName ?? ""
-    }
-    
-    static func setPortName(_ portName: String) {
-        settingManager.settings[0]?.portName = portName
-        settingManager.save()
-    }
-    
-    static func getPortSettings() -> String {
-        return settingManager.settings[0]?.portSettings ?? ""
-    }
-    
-    static func setPortSettings(_ portSettings: String) {
-        settingManager.settings[0]?.portSettings = portSettings
-        settingManager.save()
-    }
-    
-    static func getModelName() -> String {
-        return settingManager.settings[0]?.modelName ?? ""
-    }
-    
-    static func setModelName(_ modelName: String) {
-        settingManager.settings[0]?.modelName = modelName
-        settingManager.save()
-    }
-    
-    static func getMacAddress() -> String {
-        return settingManager.settings[0]?.macAddress ?? ""
-    }
-    
-    static func setMacAddress(_ macAddress: String) {
-        settingManager.settings[0]?.macAddress = macAddress
-        settingManager.save()
-    }
-    
-    static func getEmulation() -> StarIoExtEmulation {
-        return settingManager.settings[0]?.emulation ?? .starPRNT
-    }
-    
-    static func setEmulation(_ emulation: StarIoExtEmulation) {
-        settingManager.settings[0]?.emulation = emulation
-        settingManager.save()
-    }
-    
-    static func getCashDrawerOpenActiveHigh() -> Bool {
-        return settingManager.settings[0]?.cashDrawerOpenActiveHigh ?? true
-    }
-    
-    static func setCashDrawerOpenActiveHigh(_ activeHigh: Bool) {
-        settingManager.settings[0]?.cashDrawerOpenActiveHigh = activeHigh
-        settingManager.save()
-    }
-    
-    static func getSelectedPaperSize() -> PaperSizeIndex {
-        return AppDelegate.settingManager.settings[0]?.selectedPaperSize ?? .threeInch
-    }
-    
-    static func setSelectedPaperSize(_ index: PaperSizeIndex) {
-        AppDelegate.settingManager.settings[0]?.selectedPaperSize = index
-        settingManager.save()
-    }
 
 }
 
